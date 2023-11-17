@@ -1,5 +1,6 @@
 import LoginPage from './pages/LoginPage';
-import NavigationBar from './pages/CustomerDashboard';
+import HomePage from './pages/CustomerDashboard';
+import CreditApplicationForm from './pages/ApplicationPage';
 import { 
   BrowserRouter as Router, 
   Routes, 
@@ -13,7 +14,8 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={ <LoginPage navigate={useNavigate}/> }/>
-          <Route path="/Dashboard" element = {<NavigationBar navigate={useNavigate}/>}/>
+          <Route path="/Dashboard" element = {<HomePage navigate={useNavigate}/>}/>
+          <Route path='/Application' element = {<CreditApplicationForm navigate = {useNavigate}/>}/>
         </Routes>
       </Router>
     </div>
