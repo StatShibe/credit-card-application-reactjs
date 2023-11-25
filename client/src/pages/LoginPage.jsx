@@ -9,13 +9,14 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 function LoginPage(){
     return( 
-        <div style={{alignContent : 'center'}}>
+        <div>
           <Navbar bg = "dark" className="bg-body-tertiary" data-bs-theme="dark">
         <Container>
-          <Navbar.Brand>Brand text</Navbar.Brand>
+          <Navbar.Brand style={{fontFamily : 'cursive', fontSize : '30px'}}>Vault</Navbar.Brand>
         </Container>
       </Navbar>
-        <Card style={{marginTop : '70px', width : '500px',justifyContent : 'center'}}>
+      <Container style={{display : 'flex',justifyContent : 'center'}}>
+      <Card style={{marginTop : '70px', width : '500px'}}>
             <Card.Header>Login to Continue</Card.Header>
             <Card.Body>
             <FloatingLabel
@@ -32,6 +33,8 @@ function LoginPage(){
       <Button variant = 'primary' style={{marginLeft : '400px'}}>Login</Button>
             </Card.Body>
         </Card>
+      </Container>
+       
         </div>
     );
 }
