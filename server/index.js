@@ -1,14 +1,9 @@
-const knex = require('knex')({
-  client: 'mysql',
-  connection: {
-    host : '127.0.0.1',
-    port : 3306,
-    user : 'root',
-    password : '',
-    database : 'trial'
-  }
-});
+const express = require("express");
+const app = express();
+const port = 3000;
 
-knex('tableName')
-  .where('colName', 'something')
-  .then(res => console.log(res));
+app.use(express.json());
+
+app.listen(port, () => {
+  console.log(`App listening on port:${port}`);
+});
