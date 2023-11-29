@@ -9,7 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 function LoginPage(){
     return( 
-        <div>
+        <body style={{backgroundColor : '#a5a7ad', height : '100vh'}}>
           <Navbar bg = "dark" className="bg-body-tertiary" data-bs-theme="dark">
         <Container>
           <Navbar.Brand style={{fontFamily : 'cursive', fontSize : '30px'}}>Vault</Navbar.Brand>
@@ -30,12 +30,12 @@ function LoginPage(){
         <Form.Control type="password" placeholder="Password" />
       </FloatingLabel> 
       <br/>
-      <Button variant = 'primary' style={{marginLeft : '400px'}}>Login</Button>
+      <a href = "/Dashboard"><Button variant = 'primary' style={{marginLeft : '400px'}}>Login</Button></a>
             </Card.Body>
         </Card>
       </Container>
        
-        </div>
+        </body>
     );
 }
 

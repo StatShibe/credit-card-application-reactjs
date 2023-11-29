@@ -7,11 +7,20 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import NavigationBar from "../components/NavigationBar";
 import { Button } from "react-bootstrap";
 
+const style = {
+    marginTop : '30px',
+    border : '1px solid grey',
+    height : '100vh',
+    width : '100vh',
+    borderRadius : '20px',
+    padding : '20px'
+};
+
 function CreditApplicationForm(){
     return(
         <>
         <NavigationBar/>
-        <Container style = {{marginTop : '30px'}}>
+        <Container style = {style}>
         <h2>Fill Your Particulars without any mistakes</h2><br/>
             <Form>
                 <Row className="mb-3">
