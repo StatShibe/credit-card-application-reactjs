@@ -19,7 +19,7 @@ function DisplayCarousel() {
       <p>Grab your own credit card by applying online</p>  
     </Carousel.Caption>  
   </Carousel.Item>  
-  <Carousel.Item>  
+  <Carousel.Item>
     <img style={{maxHeight:"500px"}} 
       className="d-block w-100"  
       src={img2}  
@@ -29,6 +29,7 @@ function DisplayCarousel() {
     <Carousel.Caption>  
       <h3>Special benefits for using Credit card during festival time!</h3>  
       <p>Cashback and bonus benefits while shopping with selected vendors</p>  
+      <p>Join soon</p>
     </Carousel.Caption>  
   </Carousel.Item>  
   <Carousel.Item>  
